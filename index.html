@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>BeautyBestie</title>
+    <link rel="stylesheet" href="index.css" /> <!-- You can link to your CSS file for styling -->
+    <script src="api.js"></script> <!-- You can link to your JavaScript file for functionality -->
+  </head>
+  <body>
+    <h1>Welcome to BeautyBestie</h1>
+    <a class="back-link" href="index2.html">Review top 5 products</a>
+    
+    <label for="searchInput">Search for makeup products by brand:</label>
+    <input type="text" id="searchInput" placeholder="Enter brand name" />
+
+    <label for="productFilter">Filter by product:</label>
+    <select id="productFilter">
+      <option value="">All Products</option>
+      <option value="lipstick">Lipstick</option>
+      <option value="concealer">Concealer</option>
+      <option value="mascara">Mascara</option>
+      <option value="eyeliner">Eyeliner</option>
+      <option value="blush">Blush</option>
+      <option value="foundation">Foundation</option>
+      <option value="lipgloss">Lip Gloss</option>
+      <option value="primer">Face Primer</option>
+      <option value="eyeshadow">Eyeshadow</option>
+      <option value="bronzer">Bronzer</option>
+    </select>
+
+    <button onclick="filterProducts()">Search</button>
+
+    <div id="productContainer"></div>  
+  </body>
+</html>

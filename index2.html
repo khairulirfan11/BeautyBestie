@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 5 Makeup Products</title>
+  <link rel="stylesheet" href="index2.css" />
+</head>
+<body>
+  <div class="main-wrapper">
+    <header>
+      <h1>Top 5 Makeup Products</h1>
+    </header>
+
+    <main>
+      <form id="productForm">
+        <div class="form-group">
+          <label for="productName">Product Name</label>
+          <input id="productName" type="text" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="productList">Top 5 Products</label>
+          <textarea id="productList" class="form-control" rows="5" placeholder="1. Product One<br>2. Product Two<br>3. Product Three<br>4. Product Four<br>5. Product Five" required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button id="btnCreate" class="btn btn-primary" type="button">Add Product</button>
+          <button id="btnRead" class="btn btn-secondary" type="button">View Product</button>
+          <button id="btnUpdate" class="btn btn-secondary" type="button">Update Product</button>
+          <button id="btnDelete" class="btn btn-danger" type="button">Remove Product</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <!-- Home button -->
+      <button id="btnHome" class="btn btn-secondary" onclick="goToHomePage()">Home</button>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
